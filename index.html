@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Developer Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
+body {
+  background: #f5f5f5;
+}
+
+/* container */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+  
+}
+
+/* HERO */
+.hero {
+ background: radial-gradient(circle at top, #1a1a1a, #000);
+  color: white;
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.hero h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.btn {
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+.primary {
+  background: #007bff;
+  color: white;
+}
+
+.secondary {
+  border: 1px solid white;
+  color: white;
+
+}
+
+/* PROJECT */
+.projects {
+  padding: 60px 20px;
+  text-align: center;
+background: radial-gradient(
+    circle,
+    #f1f1f1 50%,
+    #bdbdbd 70%,
+    #000000 100%
+  );
+
+  
+  
+  
+  
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  
+  
+  
+}
+
+.container h2 {
+  margin-bottom: 30px;
+}
+
+.card {
+  background-color:white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+  transition: 0.3s;
+  
+}
+.card img {
+  width: 100%;
+  height: 150px;   /* ini yang ngatur tinggi */
+  object-fit: cover;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 18px;
+  background: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 14px;
+
+  transition: 0.3s;
+}
+
+/* CONTACT */
+.socials {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.socials {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  
+}
+
+.socials a {
+  font-size: 40px;
+  transition: 0.3s;
+  
+}
+  
+  
+  
+.socials a:hover {
+  transform: translateY(-5px);
+}
+ 
+  
+/* RESPONSIVE */
+@media (min-width: 768px) {
+  .cards {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .card {
+    width: 300px;
+  }
+ 
+.card-img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover; /* biar gambar ga gepeng */
+}
+    
+  
+
+  .hero h1 {
+    font-size: 45px;
+  }
+}
+
+.profil {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-bottom: 30px;
+object-fit: cover;
+
+  border: 2px solid white;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+  
+}
+#typing::after {
+  content: "|";
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+#typing {
+  font-weight: bold;
+}
+
+.profil {
+  transition: 0.3s;
+}
+
+.profil:hover {
+  transform: scale(1.05);
+}
+
+.card a:hover {
+  background: #0056b3;
+  transform: translateY(-3px);
+box-shadow: 0 5px 15px rgba(0,123,255,0.4);
+}
+
+.contact{
+ text-align: center;
+ background: radial-gradient(circle at top, #1a1a1a, #000);
+ color: white;
+ 
+ 
+}
+
+.socials a:hover:nth-child(1) {
+  color: #e1306c; /* IG */
+}
+
+.socials a:hover:nth-child(2) {
+  color: #25d366; /* WA */
+}
+
+/* WhatsApp */
+.socials a:nth-child(2) {
+  color: #25D366;
+}
+
+/* LinkedIn */
+.socials a:nth-child(3) {
+  color: #0077B5;
+}
+
+/* Instagram */
+.socials a:nth-child(1) {
+  background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.socials a:hover {
+  transform: scale(1.2);
+}
+
+#contact {
+  padding: 20px;
+}
+
+
+  </style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <section class="hero">
+      <img src="profil.jpg" alt="profil" class="profil">
+    
+    <div class="container">
+
+     <h1>Hi, I'm Dayats</h1>
+     <p>I create modern, responsive websites using <span id="typing"></span></p>
+      <h1>I Build High-Quality Websites</h1>
+      <p>Modern, responsive, and clean websites for your business</p>
+      <div class="buttons">
+        <a href="#projects" class="btn primary">View Projects</a>
+        <a href="#contact" class="btn secondary">Contact Me</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECT -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2>My Projects</h2>
+
+      <div class="cards">
+
+        <div class="card">
+          <img src="to.jpeg" alt="to do list" class="foto">
+          <h3>To Do List App</h3>
+             <p>A simple and app interactive.</p>
+
+          <a href="todo.html">View Project</a>
+        </div>
+
+        <div class="card">
+          <img src="landing.webp" alt="landing page">
+          <h3>Landing Page</h3>
+         <p>Modern and responsive toko online.</p>
+          <a href="landing.html">View Project</a>
+        </div>
+
+        <div class="card">
+          <h3>Login Form</h3>
+             <p>Clean login form with validation using JavaScript.</p>
+          <a href="admin.html">View Project</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+<section id="contact" class="contact">
+  <div class="contact">
+    <h2>Let's Work Together</h2>
+    <p>Contact me</p>
+
+    <div class="socials">
+      <a href="https://instagram.com/dayat_s93" target="_blank">
+        <i class="fab fa-instagram"></i>
+      </a>
+
+      <a href="https://wa.me/6287822123771" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+
+      <a href="https://linkedin.com/in/dayat-s-aaa6223b2" target="_blank">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </div>
+
+  </div>
+</section>
+<script src="script.js"></script>
+</body>
+</html>
